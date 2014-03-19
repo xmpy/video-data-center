@@ -1,0 +1,214 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* HDFS 文件列表 */
+#hdfs-filelist-wrapper{
+	transition: left .2s;
+	position: fixed;
+	top: 155px;
+	right:0px;
+	height:100%;
+}
+
+#components-wrapper{
+	margin-top: 20px;
+	padding:15px;
+}
+
+.hdfs-filelist-wrapper-collapse{
+	left: 95px;
+}
+.hdfs-filelist-wrapper-expanded{
+	left: 310px;
+}
+
+#hdfs-filelist-container{
+	border: 2px solid #B7BABB;
+
+	box-shadow: 0 1px 1px rgba(0,0,0,0.15),-1px 0 0 rgba(0,0,0,0.03),1px 0 0 rgba(0,0,0,0.03),0 1px 0 rgba(0,0,0,0.12);
+	margin-right: 524px;
+	background-color: #fff;
+}
+
+#hdfs-filelist-container-converter{
+	border: 2px solid #B7BABB;
+
+	box-shadow: 0 1px 1px rgba(0,0,0,0.15),-1px 0 0 rgba(0,0,0,0.03),1px 0 0 rgba(0,0,0,0.03),0 1px 0 rgba(0,0,0,0.12);
+	margin-right: 504px;
+	background-color: #fff;
+}
+#hdfs-filelist-container-converter{
+	border: 2px solid #B7BABB;
+
+	box-shadow: 0 1px 1px rgba(0,0,0,0.15),-1px 0 0 rgba(0,0,0,0.03),1px 0 0 rgba(0,0,0,0.03),0 1px 0 rgba(0,0,0,0.12);
+	margin-right: 504px;
+	background-color: #fff;
+}
+#hbase-container{
+	border: 2px solid #B7BABB;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.15),-1px 0 0 rgba(0,0,0,0.03),1px 0 0 rgba(0,0,0,0.03),0 1px 0 rgba(0,0,0,0.12);
+	margin-right: 30px;
+	background-color: #fff;
+}
+
+
+#hdfs-filelist-container-converter{
+	border: 2px solid #B7BABB;
+
+	box-shadow: 0 1px 1px rgba(0,0,0,0.15),-1px 0 0 rgba(0,0,0,0.03),1px 0 0 rgba(0,0,0,0.03),0 1px 0 rgba(0,0,0,0.12);
+	margin-right: 504px;
+	background-color: #fff;
+}
+
+
+
+#right-float-slide{
+	float:right;
+	margin-right: 20px;
+
+}
+
+/* 转码右边栏*/
+#video-convert-setting{
+	box-shadow: 0 1px 1px rgba(0,0,0,0.15),-1px 0 0 rgba(0,0,0,0.03),1px 0 0 rgba(0,0,0,0.03),0 1px 0 rgba(0,0,0,0.12);
+	width: 460px;
+	background-color: #fff;
+	border: 2px solid #B7BABB;
+	height:400px;
+}
+
+/* 摘要右边栏*/
+#video-summary-result{
+	box-shadow: 0 1px 1px rgba(0,0,0,0.15),-1px 0 0 rgba(0,0,0,0.03),1px 0 0 rgba(0,0,0,0.03),0 1px 0 rgba(0,0,0,0.12);
+	width: 460px;
+	background-color: #fff;
+	border: 2px solid #B7BABB;
+	height:500px;
+}
+
+#video_from_grid{
+	margin:15px;
+}
+
+/*上传成功提示框*/
+#upload-success-alert{
+	margin-top:0px;
+	margin-bottom: 15px;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding:8px;
+
+}
+
+
+/* 上传下载按钮 */
+#upload-download-buttons{
+	margin-left: 15px;
+	position: relative;
+
+}
+
+/* 上传中... */
+#upload-process{
+	margin-left: 10px;
+}
+
+/*
+element.style {
+display: inline;
+opacity: 0;
+top: 0px;
+left: 0px;
+width: 100%;
+height: 100%;
+position: absolute;
+}
+*/
+#upload-button{
+	position:relative;
+	margin-left: 0px;
+	height: 30px;
+	width:100px;
+}
+#upload-button-head span{
+	font-size: 17px;
+	padding-right: 4px;
+	margin-right: 8px;
+}
+#upload-button-real{
+	position:absolute;
+	top: 0px;
+	left:0px;
+	height: 100%;
+	width:100%;
+}
+#download-button{
+	margin-left: 10px;
+	height: 30px;
+	width:100px;
+}
+
+#download-button-head span{
+	font-size: 17px;
+	margin-right: 8px;
+}
+
+/* 右文件下载框*/
+#download-file-container{
+	box-shadow: 0 1px 1px rgba(0,0,0,0.15),-1px 0 0 rgba(0,0,0,0.03),1px 0 0 rgba(0,0,0,0.03),0 1px 0 rgba(0,0,0,0.12);
+	height:130px;
+	width: 460px;
+	background-color: #fff;
+	border: 2px solid #B7BABB;
+
+}
+
+/*右侧播放器*/
+#hdfs-preview-container{
+		border: 2px solid #B7BABB;
+
+	box-shadow: 0 1px 1px rgba(0,0,0,0.15),-1px 0 0 rgba(0,0,0,0.03),1px 0 0 rgba(0,0,0,0.03),0 1px 0 rgba(0,0,0,0.12);
+	height:410px;
+	margin-top:30px;
+	margin-right: 20px;
+	width: 460px;
+	background-color: #fff;
+
+}
+
+#HDFS_list{
+font-size:15px;font-family: "Microsoft Yahei";line-height:1.5;
+	height:500px; margin: 15px;
+	max-width: 100%;
+	overflow: auto;
+	box-shadow: 0 0 5px #424141;
+	padding: 10px;
+	border-radius: 2px;
+}
+
+
+/*转码设置*/
+#video-convert-setting-form{
+	margin-top:15px;
+	margin-left: 35px;
+}
+/* 转码运行按钮*/
+#run_job{
+	margin-top: 9px;
+}
+
+/*摘要运行按钮*/
+#summary-button{
+	position: absolute;
+	right: 0px;
+	width: 100px;
+	height: 30px;
+	margin-top: 0px;
+	margin-left: 15px;
+	margin-right: 20px;
+}
+
+#summary-process{
+	position: absolute;
+	right: 132px;
+}

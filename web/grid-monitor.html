@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<title>视频数据中心</title>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="css/hdfs-filelist.css" rel="stylesheet" type="text/css" />
+	    <!-- Chang URLs to wherever Video.js files will be hosted -->
+  	<link href="css/video-js.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/themes/default/style.min.css" />
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+	<!--[if lt IE 9]>
+	  <script src="js/html5shiv.js"></script>
+	  <script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div id="main-nav-top" class="navbar navbar-fixed-top" style="background-color: #343434;">
+		<a class="navbar-brand logo-nav" href="index.html"><img src="img/bupt2.jpg">北京邮电大学视频数据中心</a>
+	</div>
+	<div class="container-fluid">
+		
+		<div id="main-nav-left" class="navbar-fixed-left side-nav-expanded">
+			<!--定义左边栏的按钮-->
+
+			<div id="main" class="nav-heading">
+				<a href="index.html">
+				<span class="glyphicon glyphicon-home"></span>
+                <span class="icon-caption">首页</span>
+            	</a>
+            </div>
+			<div id="nav-hdfs-filelist" class="nav-heading">
+				<a href="hdfs-filelist.html">
+			     <span class="glyphicon glyphicon-film"></span>
+			     <span class="icon-caption">视频管理</span>
+			    </a>
+			</div>
+			     
+			<div  id="nav-video-analyze" class="nav-heading">
+                <a href="video-search.html">
+
+			    <span class="glyphicon glyphicon-search"></span>
+			    <span class="icon-caption">视频分析</span>
+                </a>
+			</div>
+
+			<div id="nav-grid-manage" class="nav-heading">
+                <a href="grid-monitor.html">
+
+				<span class="glyphicon glyphicon-cloud"></span>
+			    <span class="icon-caption">集群管理</span>
+                </a>
+			</div>
+		</div>
+
+        <div id="secondary-nav-top" class="navbar-fixed-top secondary-nav-top-right">
+            <ul>
+              <li class="secondary-nav-top-chosen">
+                <a href="grid-monitor.html">ganglia监控</a>
+              </li>
+                <li>
+                <a href="hdfs-monitor.html">集群HDFS监控</a>
+              </li>
+              <li>
+                <a href="jobs-monitor.html">集群MapReduce任务监控</a>
+              </li>
+              <li>
+                <a href="hbase-monitor.html">集群HBase任务监控</a>
+              </li>
+            </ul>
+        </div>
+		
+		
+		<div id="hdfs-filelist-wrapper" class="hdfs-filelist-wrapper-expanded" style="">
+			<div id="hbase-container" style="height:800px" >
+			     <h2 class="attachedh2">ganglia监控</h2>
+<iframe style="width:100%;height:600px" src="http://10.103.241.118/ganglia/"></iframe>
+            </div>
+		</div>
+	</div>
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+	
+    <script src="js/jQuery-File-Upload/js/vendor/jquery.ui.widget.js"></script>
+  <script src="js/jQuery-File-Upload/js/jquery.iframe-transport.js"></script>
+  <script src="js/jQuery-File-Upload/js/jquery.fileupload.js"></script>
+  <script src="js/jQuery-File-Upload/js/cors/jquery.xdr-transport.js"></script>
+
+	<script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDUarHzM8kz43SiQxQkLNnHRstEU-DuQqY&sensor=false">
+    </script>
+      <!-- video.js must be in the <head> for older IEs to work. -->
+  	<script src="js/video.js"></script>
+    <script>
+    videojs.options.flash.swf = "js/video-js.swf";
+  	</script>
+ 	<script type="text/javascript" src="js/jstree.min.js"></script>
+    <script src="js/models/model.js"></script>
+    <script src="js/grid-monitor.js"></script>
+
+
+</body>
+</html>

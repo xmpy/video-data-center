@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<title>视频数据中心</title>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/video-search.css" rel="stylesheet" type="text/css" />
+
+	    <!-- Chang URLs to wherever Video.js files will be hosted -->
+  	<link href="css/video-js.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/themes/default/style.min.css" />
+      <link rel="stylesheet" href="js/fancyBox/jquery.fancybox.css">
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+	<!--[if lt IE 9]>
+	  <script src="js/html5shiv.js"></script>
+	  <script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div id="main-nav-top" class="navbar navbar-fixed-top" style="background-color: #343434;">
+		<a class="navbar-brand logo-nav" href="index.html"><img src="img/bupt2.jpg">北京邮电大学视频数据中心</a>
+	</div>
+	<div class="container-fluid">
+		
+		<div id="main-nav-left" class="navbar-fixed-left side-nav-expanded">
+			<!--定义左边栏的按钮-->
+
+			<div id="main" class="nav-heading">
+				<a href="index.html">
+				<span class="glyphicon glyphicon-home"></span>
+                <span class="icon-caption">首页</span>
+            	</a>
+            </div>
+			<div id="nav-hdfs-filelist" class="nav-heading">
+				<a href="hdfs-filelist.html">
+			     <span class="glyphicon glyphicon-film"></span>
+			     <span class="icon-caption">视频管理</span>
+			    </a>
+			</div>
+			     
+			<div id="nav-video-analyze" class="nav-heading">
+                <a href="video-search.html">
+			    <span class="glyphicon glyphicon-search"></span>
+			    <span class="icon-caption">视频分析</span>
+                </a>
+			</div>
+
+            <div id="nav-grid-manage" class="nav-heading">
+                <a href="grid-monitor.html">
+
+                <span class="glyphicon glyphicon-cloud"></span>
+                <span class="icon-caption">集群管理</span>
+                </a>
+            </div>
+		</div>
+
+		<div id="secondary-nav-top" class="navbar-fixed-top secondary-nav-top-right">
+			<ul>
+				<li class="secondary-nav-top-chosen">
+					<a href="video-search.html">视频搜索</a>
+				</li>
+                <li>
+                    <a href="video-convert.html">视频转码</a>
+                </li>
+                <li>
+                    <a href="video-summary.html">视频摘要</a>
+                </li>
+			</ul>
+		</div>
+	
+    <div id="content-wrapper" class="content-expanded" style="">
+
+        <div id="left-float-slide">
+            <div id="search-condition-slide">
+                <h2 class="attachedh2" style="">检索条件</h2>
+                <ul class="nav nav-tabs" id="search-condition-nav" style="margin-left:15px">
+                    <li id="semantic-search" class="active"><a href="#">语义检索</a></li>
+                    <li id="image-search"><a href="#">以图搜图</a></li>
+                </ul>
+                
+                <div id="color-condition">
+                <div id="search2" style="text-align:">
+		          <div style="font-size:16px;font-weight: bold;">通过衣服颜色搜索：</div>
+		          <div class="" id="search2_form" style=" margin-bottom:5px;">
+		            <div style="margin-top:15px">上半身颜色：</div> 
+		            <div id="customWidget" style=" margin-top:5px;
+                    ">
+		            <ul class="color-chips group upbody" style="list-style: none;">
+		              <li class="color">
+		                <a href="javascript:void(0)" style="background-color: #FF00FF" title="FUCHSIN">品红色</a>
+		              </li>
+		              <li class="color">
+		                <a href="javascript:void(0)" style="background-color: #0000FF" title="BLUE">蓝色</a>
+		              </li>
+		          <li class="color">
+		            <a href="javascript:void(0)" style="background-color: #00FFFF" title="CYAN">青色</a>
+		          </li>
+		          <li class="color">
+		            <a href="javascript:void(0)" style="background-color: #00FF00" title="GREEN">绿色</a>
+		          </li>
+		          <li class="color">
+		            <a href="javascript:void(0)" style="background-color: #FFFF00" title="YELLOW">黄色</a>
+		          </li>
+		          <li class="color">
+		            <a href="javascript:void(0)" style="background-color: #FF0000" title="RED">红色</a>
+		          </li>
+		          <li class="color">
+		            <a href="javascript:void(0)" style="background-color: #800080" title="PURPLE">紫色</a>
+		          </li>
+		          <li class="color">
+		            <a href="javascript:void(0)" style="background-color: #000080" title="DBLUE">深蓝色</a>
+		          </li>
+		          <li class="color">
+		            <a href="javascript:void(0)" style="background-color: #008080" title="TEAL">鸭绿色</a>
+		          </li>
+		          <li class="color">
+		            <a href="javascript:void(0)" style="background-color: #008000" title="DGREEN">深绿色</a>
+		          </li>
+		          <li class="color">
+		            <a href="javascript:void(0)" style="background-color: #808000" title="OLIVE">橄榄色</a>
+		          </li>
+		          <li class="color">
+		            <a href="javascript:void(0)" style="background-color: #800000" title="MAROON">栗色</a>
+		          </li>
+		          <li class="color">
+		            <a href="javascript:void(0)" style="background-color: #000000" title="BLACK">黑色</a>
+		          </li>
+		          <li class="color">
+		            <a href="javascript:void(0)" style="background-color: #808080" title="GRAY">灰色</a>
+		          </li>
+		          <li class="color">
+		            <a href="javascript:void(0)" style="background-color: #C0C0C0" title="SIVER">银色</a>
+		          </li>
+		          <li class="color">
+		            <a href="javascript:void(0)" style="background-color: #FFFFFF" title="WHITE">白色</a>
+		          </li>
+		        </ul>
+		              </div>
+		             <div  style="margin-top:15px;width:120px">下半身颜色：</div> 
+		             <div id="customWidget2" style="">
+		            <ul class="color-chips group downbody" style="list-style: none;">
+		          <li class="color">
+		            <a href="javascript:void(0)" style="background-color: #FF00FF" title="FUCHSIN">品红色</a>
+		          </li>
+		          <li class="color">
+		            <a href="javascript:void(0)" style="background-color: #0000FF" title="BLUE">蓝色</a>
+		          </li>
+		          <li class="color">
+		            <a href="javascript:void(0)" style="background-color: #00FFFF" title="CYAN">青色</a>
+		          </li>
+		          <li class="color">
+		            <a href="javascript:void(0)" style="background-color: #00FF00" title="GREEN">绿色</a>
+		          </li>
+		          <li class="color">
+		            <a href="javascript:void(0)" style="background-color: #FFFF00" title="YELLOW">黄色</a>
+		          </li>
+		          <li class="color">
+		            <a href="javascript:void(0)" style="background-color: #FF0000" title="RED">红色</a>
+		          </li>
+		          <li class="color">
+		            <a href="javascript:void(0)" style="background-color: #800080" title="PURPLE">紫色</a>
+		          </li>
+		          <li class="color">
+		            <a href="javascript:void(0)" style="background-color: #000080" title="DBLUE">深蓝色</a>
+		          </li>
+		          <li class="color">
+		            <a href="javascript:void(0)" style="background-color: #008080" title="TEAL">鸭绿色</a>
+		          </li>
+		          <li class="color">
+		            <a href="javascript:void(0)" style="background-color: #008000" title="DGREEN">深绿色</a>
+		          </li>
+		          <li class="color">
+		            <a href="javascript:void(0)" style="background-color: #808000" title="OLIVE">橄榄色</a>
+		          </li>
+		          <li class="color">
+		            <a href="javascript:void(0)" style="background-color: #800000" title="MAROON">栗色</a>
+		          </li>
+		          <li class="color">
+		            <a href="javascript:void(0)" style="background-color: #000000" title="BLACK">黑色</a>
+		          </li>
+		          <li class="color">
+		            <a href="javascript:void(0)" style="background-color: #808080" title="GRAY">灰色</a>
+		          </li>
+		          <li class="color">
+		            <a href="javascript:void(0)" style="background-color: #C0C0C0" title="SIVER">银色</a>
+		          </li>
+		          <li class="color">
+		            <a href="javascript:void(0)" style="background-color: #FFFFFF" title="WHITE">白色</a>
+		          </li>
+		        </ul>
+		                </div>
+		          </div>
+	            </div>
+	            <div class="" style="margin-top:20px;margin-left:20px;text-align:left;">
+	              <input type="button" value="搜索" style="" id="search_button_color" class="btn btn-primary" onclick="mainController.handleSearchColor"/>
+	
+	              <span id="jobspin2" style="display:inline;"></span> 
+
+            	</div>
+            </div> <!-- color condition end-->
+                <div id="image-condition">
+                    <div id="upload-button" class="btn btn-primary">
+                        <span id="upload-button-head">
+                            <span class="glyphicon glyphicon-cloud-upload" /></span>点击上传图片
+                        </span>
+                        <input id="upload-button-real" value="Search"  type="file" name="file[]" data-url="http://localhost/webapps/VideoDataCenter/searchupload.do" multiple style="display:inline;opacity: 0;">
+
+                    </div>
+                    <div> 
+                    <span id="jobspin" style="display:inline;">   
+                    </span> 
+                    </div>
+                    <div id="upload-image">
+                        <img src="" id="img_uploaded" class="img-polaroid" style="width:130px; height:140px; margin-top:15px; margin-left:20px; margin-bottom:5px;">
+                    </div>
+                </div>
+            </div>
+		</div>
+        
+        <div id="search-result-container" style="height:600px" >
+            <h2 class="attachedh2">搜索结果</h2>
+
+              <div id="pagination">
+                <div id="numPerPage", font-style="italic", color="#6a3e6a">
+                (每页 20 条记录)
+                </div>
+                <div id="previous_page"> &lt;&lt; </div> 页 
+                <input id="current_page" value="1"/>  Of 
+                <div id="totalpage">1</div>
+                <div id="next_page"> &gt;&gt; </div>
+              </div>
+
+              <table id="result_table" width="90%" cellpadding="4" class="table">
+                <tbody  >
+                  <tr>
+                    <th width="10%">序号</th>
+                    <th width="20%">视频</th>
+                    <th width="70%">描述</th>
+                  </tr>
+                </tbody>
+              </table>
+		</div>
+	</div>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/spin.js"></script>
+  <script src="js/fancyBox/jquery.fancybox.js"></script>
+
+    <script src="js/jQuery-File-Upload/js/vendor/jquery.ui.widget.js"></script>
+  <script src="js/jQuery-File-Upload/js/jquery.iframe-transport.js"></script>
+  <script src="js/jQuery-File-Upload/js/jquery.fileupload.js"></script>
+  <script src="js/jQuery-File-Upload/js/cors/jquery.xdr-transport.js"></script>
+
+	<script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDUarHzM8kz43SiQxQkLNnHRstEU-DuQqY&sensor=false">
+    </script>
+      <!-- video.js must be in the <head> for older IEs to work. -->
+  	<script src="js/video.js"></script>
+    <script>
+    videojs.options.flash.swf = "js/video-js.swf";
+  	</script>
+ 	<script type="text/javascript" src="js/jstree.min.js"></script>
+    <script src="js/models/search-model.js"></script>
+
+	<script src="js/video-search.js"></script>
+
+
+</body>
+</html>
